@@ -56,6 +56,10 @@ SELECT holiday_date
 FROM market_holidays
 WHERE EXTRACT(YEAR FROM holiday_date) = 2024;
 
+insert into market_holidays
+values ('2025-01-09', 'us','President Jimmy Carter’s funeral​');
+
+
 
 CREATE TABLE public.stock2 (
 	symbol varchar(10) NULL,
