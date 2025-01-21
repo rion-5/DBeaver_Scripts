@@ -27,3 +27,8 @@ select * from stock_data;
 
 insert into stock_data (ticker,trade_date,open_price,high_price,low_price, close_price, volume) 
  select symbol,trading_date, open, high, low, close, volume from stock ;
+
+
+select count(distinct ticker) from stock_data sd
+where trade_date >= :start_date and trade_date <= :end_date;
+
